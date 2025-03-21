@@ -4,8 +4,8 @@
     --cor-de-fundo: #2d2a2a;
     --verde: #77ff5f;
     --branco: #FFFFFF;
-    --botao-ativo: #90cff3;
-    --botao-inativo: rgba(23, 241, 197, 0.5);
+    --botao-ativo: #1df091;
+    --botao-inativo: #da92d5fc;
     --texto-fundo: rgba(58, 55, 94, 0.3);
 }
 
@@ -60,9 +60,24 @@ body {
     display: block;
 }
 
+.ativo{
+ background-color: var(--botao-ativo);
+ border-bottom: 4px solid rgb(30, 237, 137);
+ font-weight: bold;
+
+}
+
 @media screen and (min-width: 768px) {
 .botoes {
-display: flex;
-}
+display: flex; 
+ }
+ .botao:first-child{
+border-radius: 40px 0 0 0;
+
+ }
+.botao:last-child{
+    border-radius: 0 40px 0  0;
+
+ }
 
 }
